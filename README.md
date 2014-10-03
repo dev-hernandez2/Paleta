@@ -1,4 +1,4 @@
-Paleta
+Paleta css responsive grid system
 ======
 
 
