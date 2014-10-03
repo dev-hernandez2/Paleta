@@ -1,0 +1,975 @@
+
+
+
+/* #Paleta general style
+================================================== */
+
+[class*="box-"]
+{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	
+
+}
+
+.wrap
+
+{
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -40px;
+}
+
+.wrap:after
+{
+	content: "";
+	display: block;
+}
+
+.stiky-footer,.wrap:after
+{
+	 /* .push must be the same height as stiky-foote class */
+	height: 40px;
+}
+
+footer
+{
+	margin: 20px 0 0;
+	background: #ccc;
+}
+
+.container
+{
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	max-width: 1024px;
+}
+
+.container:before,.container:after
+{
+	display: table;
+	content: " ";
+
+}
+
+.container:after
+{
+	clear: both;
+
+}
+
+*,*:after,*:before
+{
+	margin: 0;
+	padding: 0;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+[class*='box-'] {
+  float: left;
+  padding: 10px;
+}
+
+[class*='box-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+
+
+.pack:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+a
+{
+	color: #428bca;
+}
+
+a:hover,a:focus
+{
+	color: #2a6496;
+}
+
+a:focus
+{
+	outline: thin dotted #333;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+p
+{
+	margin-bottom: 1.5em;
+	font-size: .99em;
+	-webkit-hyphens: auto;
+	-webkit-hyphenate-character: "\2010";
+	-webkit-hyphenate-limit-after: 1;
+	-webkit-hyphenate-limit-before: 3;
+	-moz-hyphens: auto;
+}
+
+footer a
+{
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+footer a:visited
+{
+	color: #fff;
+}
+
+footer a:focus
+{
+	outline: thin dotted;
+	color: #000;
+}
+
+footer a:hover,footer a:active
+{
+	outline: 0;
+	color: #fff;
+}
+
+
+/*--style===================================================================================*/
+
+.content
+{
+	padding: 3.4648437% 0;
+	
+}
+
+.pull-left
+{
+	float: left!important;
+}
+
+.pull-right
+{
+	float: right!important;
+}
+
+.center-block
+{
+	display: block;
+	margin: 0 auto;
+}
+
+.general-padding
+{
+	padding: 10px;
+}
+
+.text-left
+{
+	text-align: left;
+}
+
+.text-right
+{
+	text-align: right;
+}
+
+.test-center
+{
+	text-align: center;
+}
+
+.text-hide
+{
+	color: transparent;
+	text-shadow: none;
+	border: 0;
+	
+}
+
+.scrollable
+{
+	max-height: 340px;
+	overflow-y: scroll;
+}
+
+.cler
+{
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.overflow-hidden
+{
+	overflow: hidden;
+}
+
+.fix
+{
+	position: fixed;
+	
+}
+
+/* big heading ====================================================================*/
+
+.heding
+{
+	padding: 30px;
+	margin-bottom: 30px;
+	font-size: 1.3125em;
+	font-weight: 200;
+	line-height: 2.1428571435;
+	color: inherit;
+	background: #eee;
+}
+
+.heding h1
+{
+	line-height: 1;
+	color: inherit;
+}
+
+.heding p
+{
+	line-height: 1.4;
+}
+
+/* Images ====================================================================*/
+
+img
+{
+	vertical-align: middle;
+}
+
+.img
+{
+	line-height: 0;
+	margin-bottom: 20px;
+	
+}
+
+.img-mobile
+{
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+
+.img.circle
+{
+	-webkit-border-radius: 50%!important;
+	-moz-border-radius: 50%!important;
+	-ms-border-radius: 50%!important;
+	-o-border-radius: 50%!important;
+	border-radius: 50%!important;
+	overflow: hidden;
+
+	width: auto;
+}
+
+.img.rounded
+{
+	overflow: hidden;
+	-webkit-border-radius: 4px 4px;
+	-moz-border-radius: 4px 4px;
+	-ms-border-radius: 4px 4px;
+	-o-border-radius: 4px 4px;
+	border-radius: 4px;
+}
+
+.img.photo
+{
+	border: 5px solid #fff;
+	-webkit-box-shadow: 0 0 1px #555;
+	-moz-box-shadow: 0 0 1px #555;
+	box-shadow: 0 0 1px #555;
+}
+
+.img.photo.polaroid
+{
+	padding-bottom: 50px;
+	background: #fff;
+}
+
+
+/* Video================================================================== */
+
+.video-container
+{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* thumbnail================================================================== */
+
+.thumbnail,.img-thumbnail
+{
+	padding: 4px;
+	line-height: 1.428571429;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	background: #fff;
+}
+
+.thumbnail
+{
+	display: block;
+}
+
+.thumbnail img,.img-thumbnail
+{
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+
+a.thumbnail:hover,a.thumbnail:focus
+{
+	border-color: #428bca;
+}
+
+.thumbnail img
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.thumbnail .caption
+{
+	padding: 9px;
+	color: #333;
+}
+
+/* blockquote================================================================== */
+
+
+blockquote,blockquote p
+{
+	font-size: 1em;
+	line-height: 24px;
+	color: #777;
+	font-style: italic;
+}
+
+blockquote
+{
+	margin: 0 0 20px;
+	padding: 9px 20px 0 19px;
+	border-left: 1px solid #ddd;
+}
+
+blockquote cite
+{
+	display: block;
+	font-size: 12px;
+	color: #555;
+}
+
+blockquote cite:before
+{
+	content: "\2014 \0020";
+}
+
+blockquote cite a,blockquote cite a:visited,blockquote cite a:visited
+{
+	color: #555;
+}
+
+hr
+{
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 30px;
+	height: 0;
+}
+/* bottom================================================================== */
+
+
+/* form ================================================================== */
+
+.row-form
+{
+	clear: left;
+	overflow: hidden;
+	zoom: 1;
+	margin: 0 0 1em;
+}
+
+.label
+{
+	display: block;
+	margin: 0 0 .1em;
+}
+
+.input,.select,.textarea
+{
+	width: 100%;
+	*width: 90%;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	border-radius: .3em;
+}
+
+.input,.textarea { padding: 5px; }
+.textarea { height: 150px; }
+
+.radio
+{
+	margin-left: 1px;
+	margin-right: .5em;
+}
+
+.form-list
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn
+{
+	display: inline-block;
+	margin: 0;
+	padding: .7em 1.2em;
+	border: 0;
+	border-radius: .3em;
+	color: #fff;
+	background-color: #c10000;
+	line-height: 1;
+}
+
+.btn:focus { background-color: #000; }
+.btn:hover { background-color: green; }
+.btn:active { background-color: red; }
+
+
+/* nav ================================================================== */
+
+.logo,.nav
+{
+	float: left
+}
+
+.navbar
+{
+	width: 100%;
+	min-height: 60px;
+	display: block;
+	margin-bottom: 20px;
+	position: relative;
+	
+}
+
+.navbar .logo
+{
+	display: inline-block;
+	margin: 0 2.12766% 0 0;
+	padding: 0;
+	max-height: 100%;
+	line-height: 58px;
+	padding: 10px;
+}
+
+.navbar .logo a
+{
+	display: block;
+
+	padding: 0;
+	overflow: hidden;
+	max-height: 100%;
+	line-height: 58px;
+}
+
+.navbar .logo a img
+{
+
+	max-height: 100%;
+}
+
+.navbar ul
+{
+	display: table;
+	vertical-align: middle;
+	margin: 0;
+	float: none;
+	width: 100%;
+}
+
+.navbar li
+{
+	float: left;
+	list-style: none;
+	width: 100px;
+}
+
+.navbar a
+{
+	display: block;
+	padding: 0 16px;
+	white-space: nowrap;
+	color: #000;
+	height: 60px;
+	line-height: 58px;
+	font-size: 1em;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navbar a:hover
+{
+}
+
+.navbar .nav
+{
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.navbar .nav li
+{
+	position: relative;
+	display: block;
+}
+
+.navbar .nav li a
+{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+.navbar .nav li a:hover,.nav li a:focus
+{
+	text-decoration: none;
+	background: #eee;
+}
+/* style ================================================================== */
+
+.mobile-display
+{
+	display: none;
+}
+
+.tablet-display
+{
+	display: none;
+}
+
+
+.menu-trigger
+{
+	display: none;
+}
+
+.clearfix:before,.clearfix:after
+{
+	content: "";
+	display: table
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+.clearfix 
+{
+	 *zoom: 1; 
+}
+
+
+
+.muted
+{
+	color: #999;
+}
+
+
+/* header ================================================================== */
+small
+{
+	font-size: 85%;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+{
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small
+{
+	font-weight: 400;
+	line-height: 1;
+	color: #999;
+}
+
+
+
+h1,.h1
+{
+	font-size: 2.34em;
+}
+
+h2,.h2
+{
+	font-size: 2em;
+}
+
+h3,.h3
+{
+	font-size: 1.5em;
+}
+
+h4,.h4
+{
+	font-size: 1.125em;
+}
+
+h5,.h5
+{
+	font-size: 0.875em;
+}
+
+h6,.h6
+{
+	font-size: 0.75em;
+}
+
+h1 small,.h1 small
+{
+	font-size: .631578947em;
+}
+
+h2 small,.h2 small
+{
+	font-size: .5625em;
+}
+
+h3 small,.h3 small,h4 small,.h4 small
+{
+	font-size: .583333333em;
+}
+
+.line-header
+{
+	padding-bottom: 9px;
+	margin: 0px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Cocoa GRID-BOX================================================================== */
+
+.box-1
+{
+	width: 100%; /*1024 / 1024*/
+} 
+
+.box-2
+{
+	width: 50%; /*512 / 1024*/
+}
+
+.box-3
+{
+	width: 33.33%; /*341 / 1024*/
+}
+
+.box-4
+{
+	width: 25%; /*256 / 1024*/
+}
+
+.box-5
+{
+	width: 20%; /*204.8/ 1024*/
+}
+
+.box-6
+{
+	width: 16.6666666667%; /*170 / 1024*/
+}
+
+.box-7
+{
+	width: 14.2857142857%; /*146 / 1024*/
+}
+
+.box-8
+{
+	width: 12.5%; /*128 / 1024*/
+} 
+
+.box-9
+{
+	width: 11.1111111111%; /*133.7777778 / 1024*/
+}
+
+.box-10
+{
+	width: 10%; /*102.4 / 1024*/
+}
+
+.box-11
+{
+	width: 9.09090909091%; /*93.09090909 / 1024*/
+}
+
+.box-12
+{
+	width: 8.33%; /*85.33333333 / 1024*/
+}
+
+.box-41
+{
+	width: 41.666666666667%;
+}
+
+.box-58
+{
+	width: 58.333333333333%;
+}
+
+.box-66
+{
+	width: 66.666666666667%;
+}
+
+.box-75
+{
+	width: 75%;
+}
+
+.box-83
+{
+	width: 83.333333333333%;
+}
+
+.box-91
+{
+	width: 91.666666666667%;
+}
+
+/* media query ================================================================== */
+
+@media (min-width:768px)
+{
+	.submission-form { max-width: 40em; }
+	
+	.label
+	{
+		float: left;
+		width: 25%;
+		margin: 0 2% 0 0;
+		text-align: right;
+	}
+	
+	.input,.select,.textarea
+	{
+		float: left;
+		width: 70%;
+	}
+
+	.form-indent
+	{
+		margin-left: 27%;
+		width: 70%;
+	}
+}
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.container
+	{
+		max-width: 768px;
+	}
+    .tablet-display
+	{
+		display: block;
+	}
+	.no-display-md 
+	{
+		display:none;
+	}
+	
+	.box-full
+	{
+		width: 100%;
+	}
+	
+	.box-half
+	{
+		width: 50%;
+	}
+	
+	.box-33
+	{
+		width: 33.33%;
+	}
+	
+	
+.heding
+	{
+		padding: 50px 60px;
+		border-radius: 6px;
+	}
+	
+	.heding h1
+	{
+		font-size: 4.0em;
+	}
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.heding
+	{
+		padding: 50px 60px;
+		border-radius: 6px;
+	}
+	
+	.heding h1
+	{
+		font-size: 4.0em;
+	}
+	
+.container
+	{
+		max-width: 100%;
+	}
+	
+	
+	.box-1,.box-2,.box-3,.box-4,.box-5,.box-6,.box-7,.box-8,.box-9,.box-10,.box-11,.box-12
+	{
+		width: 100%;
+	}
+	
+	.box-41,.box-58,.box-66,.box-75,.box-83,.box-91,.box-full,.box-half,.box-33
+	{
+		width: 100%;
+	}
+	.box-half-small
+	{
+		width: 50%;
+	}
+	.mobile-display
+	{
+		display: block;
+	}
+	
+	.tablet-display
+	{
+		display: none;
+	}
+	.no-display-small 
+	{
+		display:none;
+	}
+	
+	.navbar
+	{
+		padding: 0;
+	}
+	
+	.navbar .logo
+	{
+		width: 100%;
+		margin: 10px 0;
+	}
+	
+	.nav
+	{
+		float: none;
+		width: 100%;
+		display: none;
+	}
+	
+	.navbar li
+	{
+		width: 100%;
+		background: #ccc;
+	}
+	
+	.menu-trigger
+	{
+		clear: both;
+		display: block;
+		color: #305782;
+		padding: 10px;
+		text-align: right;
+		font-size: 83%;
+		cursor: pointer;
+		background: #d5dce4;
+	}
+	
+	.nav.nav-expanded
+	{
+		display: block;
+	}
+	
+	.nav ul li
+	{
+		float: none;
+		border-bottom: 2px solid #d5dce4;
+	}
+	
+	.nav ul li:last-child
+	{
+		border-bottom: none;
+	}
+}
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container
+	{
+		max-width: 100%;
+	}
+	
+	
+	
+}
